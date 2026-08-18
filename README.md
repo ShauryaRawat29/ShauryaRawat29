@@ -1,52 +1,44 @@
-# Hi, I'm Shaurya Rawat 👨‍💻
+# Hey, I'm Shaurya 👋
 
-**Aspiring ML / Data / AI engineer** · Final-year student · Open to placement & internships (2026)
+Final-year student working toward a career in ML / data engineering. I spend most of my time in Python — building backends, training models, and shipping things instead of leaving them in a notebook.
 
-I build end-to-end machine learning systems — from data pipelines and model training to production APIs and frontends. I care about **explainable AI**: every model I ship can explain *why* it made a decision.
+The thread that runs through my projects: **explainable AI**. If a model gives me an answer, I want to be able to say *why* it gave that answer. I try to carry that into everything I build.
 
----
+## Projects
 
-## 🔭 What I'm working on
+### QueryDocs — ask questions about your own documents
+[Repo](https://github.com/ShauryaRawat29/querydocs)
 
-- Building an **LLM/RAG document-Q&A app** (FastAPI + embeddings + FAISS) — coming soon below.
-- Placement & internship preparation — open to **software / ML / data engineering** roles.
+Upload a PDF, TXT, Markdown or DOCX and ask questions about it. QueryDocs embeds the document into a FAISS index and answers only from what's actually in the file — every answer comes attached to the passages it used, so nothing gets made up.
 
-## 🧠 Featured Projects
+It works with zero API keys out of the box (it falls back to returning the best-matching passages), and you can optionally add a Groq or OpenAI key for full sentence synthesis.
 
-### PhishGuard — AI phishing URL detection
-[![GitHub](https://img.shields.io/badge/GitHub-Repo-181717?logo=github)](https://github.com/ShauryaRawat29/phishguard) · [**Live demo**](https://shauryarawat29.github.io/phishguard)
+**Stack:** Python · FastAPI · sentence-transformers · FAISS · Next.js
 
-Classifies URLs as phishing or legitimate with an **XGBoost** model and explains every prediction using **SHAP** values.
+### PhishGuard — phishing URL detection
+[Repo](https://github.com/ShauryaRawat29/phishguard) · [Live demo](https://shauryarawat29.github.io/phishguard)
 
-- 33 hand-crafted URL features · FastAPI backend · containerized (Docker) · 100% test coverage
-- Deployed: GitHub Pages (UI) + Render (API)
+Paste a URL and it tells you whether it's phishing or legitimate — and why. An XGBoost model scores it on 33 hand-crafted URL features, then SHAP values show exactly which signals pushed the verdict. The server never actually visits the URL it's analyzing. This was my final-year minor project.
 
-**Stack:** Python · XGBoost · SHAP · scikit-learn · FastAPI · Docker · GitHub Actions
+**Stack:** Python · XGBoost · SHAP · FastAPI · Docker · GitHub Pages + Render
 
 ### AI Essay Detector — evidence-based AI-writing analysis
-[![GitHub](https://img.shields.io/badge/GitHub-Repo-181717?logo=github)](https://github.com/ShauryaRawat29/ai-essay-detector)
+[Repo](https://github.com/ShauryaRawat29/ai-essay-detector)
 
-Flagged AI-generated content by measuring **sentence-level statistical signals** (perplexity, entropy, token probabilities) against human baselines — no binary "AI or not" guesswork.
+Instead of a binary "is this AI?" guess, it measures sentence-level statistical signals — perplexity, entropy, token probabilities — and compares them against human baselines. FastAPI + Next.js, built for the 2026 i12 HR Drive Hackathon, with 200+ tests.
 
-- Full-stack: FastAPI + Next.js · 200+ tests · ruff + mypy clean
-- Built for the 2026 i12 HR Drive Hackathon
+**Stack:** Python · FastAPI · Next.js · statistical NLP
 
-**Stack:** Python · FastAPI · Next.js 16 · statistical NLP · testing
+## Currently
 
----
+Placement and internship season (2026) — open to software, ML and data engineering roles. When I'm not preparing for that, I'm extending QueryDocs or tinkering with smaller experiments.
 
-## 🛠️ Tech
+## Tech
 
-- **Languages:** Python, JavaScript/TypeScript, SQL
-- **ML/AI:** scikit-learn, XGBoost, SHAP, embeddings, RAG, statistical NLP
-- **Backend:** FastAPI, REST APIs, Docker
-- **Frontend:** Next.js, HTML/CSS/JS
-- **Tools:** Git, GitHub Actions (CI/CD), pytest, ruff
+- **Python** — FastAPI, scikit-learn, XGBoost, SHAP, sentence embeddings, FAISS
+- **JavaScript/TypeScript** — Next.js / React when a project needs a real UI
+- **The rest** — SQL, Docker, Git + GitHub Actions, pytest, ruff
 
----
+## Elsewhere
 
-## 📫 Let's connect
-
-- **GitHub:** [ShauryaRawat29](https://github.com/ShauryaRawat29)
-
-*Open to placement and internship opportunities in software, ML, and data engineering.*
+- GitHub: [ShauryaRawat29](https://github.com/ShauryaRawat29)
