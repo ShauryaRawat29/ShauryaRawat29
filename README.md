@@ -16,7 +16,7 @@ It works with zero API keys out of the box (it falls back to returning the best-
 **Stack:** Python · FastAPI · sentence-transformers · FAISS · Next.js
 
 ### PhishGuard — phishing URL detection
-[Repo](https://github.com/ShauryaRawat29/phishguard) · [Live demo](https://shauryarawat29.github.io/phishguard)
+[Repo](https://github.com/ShauryaRawat29/phishguard) · [Live demo](https://frontend-flame-ten-11.vercel.app/)
 
 Paste a URL and it tells you whether it's phishing or legitimate — and why. An XGBoost model scores it on 33 hand-crafted URL features, then SHAP values show exactly which signals pushed the verdict. The server never actually visits the URL it's analyzing. This was my final-year minor project.
 
